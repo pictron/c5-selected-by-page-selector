@@ -10,7 +10,7 @@
   		foreach ($pages as $p):
     	$href = $nh->getLinkToCollection($p);
     	?>
-    	<li><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span><a href="<?php echo $href; ?>"><?php echo $p->getCollectionName(); ?></a></li>
+    	<li><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span><a href="<?php echo h($href); ?>"><?php echo h($p->getCollectionName()); ?></a></li>
     	<?php
 	    endforeach;
 	    ?>
